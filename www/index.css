@@ -1,0 +1,31 @@
+.container {
+    flex-direction: row;
+}
+
+div {
+    margin-bottom: 1em;
+}
+
+div>* {
+    margin-top: 1em;
+}
+
+body {
+    background-color: #131516;
+}
+
+h1 {
+    color: #d8d4cf;
+}
+
+label {
+    color: #d8d4cf;
+}
+
+input {
+    width: 400px;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}

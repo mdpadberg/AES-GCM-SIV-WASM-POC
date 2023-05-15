@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AES-GCM-SIV WASM POC</title>
+    
+</head>
+
+<body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your
+        browser.</noscript>
+    <h1>AES-GCM-SIV WASM POC</h1>
+    <hr class="solid">
+    <div class="container">
+        <button onclick="generate()">Generate key</button>
+        <input type="text" id="key" value="zlOgOHk8Ubr2CK2rL8KWV96r0xMcqOjFVFejj_SZAXU">
+        <button onclick="copy()">Copy key</button>
+    </div>
+    <hr class="solid">
+    <div class="container">
+        <label for="text">Encryption key:</label>
+        </br>
+        <input type="text" id="encryptkey" value="zlOgOHk8Ubr2CK2rL8KWV96r0xMcqOjFVFejj_SZAXU">
+        </br>
+        <textarea id="encryptInput" cols="20" rows="20">Value to encrypt</textarea>
+        <button onclick="encrypttext()">Encrypt</button>
+        <textarea id="encryptOutput" cols="20" rows="20">bDRRYjlxUzZac2lPpKIRF5owb7MNjJrC2fK57m6BPiqCJ7Y9voIUyqVF61I</textarea>
+    </div>
+    <hr class="solid">
+    <div class="container">
+        <label for="text">Decryption key:</label>
+        </br>
+        <input type="text" id="decryptkey" value="zlOgOHk8Ubr2CK2rL8KWV96r0xMcqOjFVFejj_SZAXU">
+        </br>
+        <textarea id="decryptInput" cols="20" rows="20">bDRRYjlxUzZac2lPpKIRF5owb7MNjJrC2fK57m6BPiqCJ7Y9voIUyqVF61I</textarea>
+        <button onclick="decrypttext()">Decrypt</button>
+        <textarea id="decryptOutput" cols="20" rows="20">Value to encrypt</textarea>
+    </div>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="module"></script>  
+</body>
+
+</html>
